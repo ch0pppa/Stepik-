@@ -1,0 +1,232 @@
+# number = float(input())
+# integer_part = int(number)
+# decimal_part = number - integer_part
+# print(int(decimal_part * 10))
+
+# number1 = int(input())
+# number2 = int(input())
+# number3 = int(input())
+# maximum = max(number1,number2,number3)
+# minimum = min(number1,number2,number3)
+# print(maximum)
+# print((number1 + number2 + number3) - maximum - minimum)
+# print(minimum)
+
+# num1 = str(input())
+# num2 = str(input())
+# num3 = str(input())
+# length1 = len(num1)
+# length2 = len(num2)
+# length3 = len(num3)
+# min_length = min(length1,length2,length3)
+# max_length = max(length1,length2,length3)
+# middle_length = (length1+length2+length3) - min_length - max_length
+
+# if (middle_length - min_length) == (max_length - middle_length):
+#   print("YES")
+# else:
+#   print("NO")
+
+# string = str(input())
+# if "синий" in string:
+#     print('YES')
+# else:
+#     print('NO')
+
+# string = str(input())
+# if "суббота" in string:
+#     print("YES")
+# elif "воскресенье" in string:
+#     print("YES")
+# else:
+#     print("NO")
+
+# email = input()
+
+# if "@" in email and "." in email:
+#   print("YES")
+# else:
+#   print("NO")
+
+# import math
+# x1 = float(input())
+# y1 = float(input())
+# x2 = float(input())
+# y2 = float(input())
+# print(math.sqrt(sum([pow(x1-x2,2),pow(y1-y2,2)])))
+
+# import math
+# R = float(input())
+# print(math.pi*pow(R,2))
+# print(2*math.pi*R)
+
+# import math
+# a = float(input())
+# b = float(input())
+# print((a+b)/2)
+# print(math.sqrt(a*b))
+# print(2*a*b/(a+b))
+# print(math.sqrt((pow(a,2)+pow(b,2))/2))
+
+# import math
+# x = float(input())
+# r = (x*math.pi)/180
+# print(math.sin(r)+math.cos(r)+(pow(math.tan(r),2)))
+
+# import math
+# x = float(input())
+# print(math.floor(x)+math.ceil(x))
+
+# import math
+
+# a = float(input())
+# b = float(input())
+# c = float(input())
+# discriminant = pow(b,2) - 4*a*c
+
+# if discriminant >= 0:
+#     x1 = (-b - math.sqrt(discriminant)) / (2 * a)
+#     x2 = (-b + math.sqrt(discriminant)) / (2 * a)
+#     if x1 < x2:
+#         print(x1)
+#         print(x2)
+#     elif x1==x2:
+#         print(x1)
+#     else:
+#         print(x2)
+#         print(x1)
+# else:
+#     print("Нет корней")
+
+# import math
+# n = int(input())
+# a = float(input())
+# print((n*(pow(a,2)))/(4*math.tan(math.pi/n)))
+
+# string = input()
+# n = int(input())
+# for _ in range(n):
+#     print(string)
+
+# for i in range(6):
+#     for j in range(3):
+#         print("A", end="")
+#     print()
+
+# for i in range(5):
+#     for j in range(4):
+#         print("B", end="")
+#     print()
+
+# for i in range(10):
+#     if i == 0:
+#         print("E")
+#     elif i < 10:
+#         for j in range(5):
+#             print("T", end="")
+#         print()
+# else:
+#     print("G")
+
+# n = int(input())
+# for i in range(n, 0, -1):
+#     print("*" * (i - 1))
+
+
+# # стартовое количество организмов
+# m = int(input())
+# # среднесуточное увеличение в %
+# p = int(input())
+# # количество дней
+# n = int(input())
+
+# for i in range(n):
+#     print(i+1, m)
+#     m = m + m * (p / 100)
+
+# m = int(input())
+# n = int(input())
+
+# for i in range(m, n + 1):
+#   print(i)
+
+# m = int(input())
+# n = int(input())
+# if m<n:
+#   for i in range(m,n+1):
+#     print(i)
+# else:
+#   for i in range(m,n-1,-1):
+#     print(i)
+
+# m = int(input())
+# n = int(input())
+
+# for i in range(m, n + 1):
+#   if i % 17 == 0 or i % 10 == 9 or (i % 3 == 0 and i % 5 == 0):
+#     print(i)
+
+# n = int(input())
+
+# for i in range(1, 11):
+#   print(n,"x", i,"=", n * i)
+
+# num1 = 4
+# num2 = 6
+# num1 += num2
+# num1 *= num1
+# print(num1)
+# total = 0
+# for i in range(1, 6):
+#     total += i
+# print(total)
+# total = 0
+# for i in range(1, 6):
+#     total += i
+#     print(total, end='')
+
+# n = int(input())
+# factorial = 1
+# for i in range(1, n + 1):
+#     factorial *= i
+# print(factorial)
+# product = 1
+# for i in range(10):
+#   number = int(input())
+#   if number != 0:
+#     product *= number
+# print(product)
+
+# n = int(input())
+# sum_of_divisors = 1  # 1 всегда является делителем
+# for i in range(2,n+1):
+#     if n % i == 0 or n==i:
+#         sum_of_divisors += i
+# print(sum_of_divisors)
+
+# n = int(input())
+# sum = 0
+# for i in range(1, n + 1):
+#   if i % 2 == 0:
+#     sum -= i
+#   else:
+#     sum += i
+# print(sum)
+
+n = int(input())
+
+# Ввод чисел последовательности
+numbers = []
+for i in range(n):
+  numbers.append(int(input()))
+
+# Нахождение наибольшего и второго наибольшего чисел
+max_number = max(numbers)
+numbers.remove(max_number)
+second_max_number = max(numbers)
+
+# Вывод результата
+print(max_number)
+print(second_max_number)
+
+
